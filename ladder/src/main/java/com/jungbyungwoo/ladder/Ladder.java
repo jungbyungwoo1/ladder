@@ -17,7 +17,7 @@ public class Ladder {
 		ArrayList<Steps> path = new ArrayList<Steps>();
 
 		for (int i = 0; i < height; i++) {
-			path.add(Steps.BELOW);
+			path.add(Steps.STRAIGHT);
 		}
 
 		return path;
@@ -40,7 +40,7 @@ public class Ladder {
 				case RIGHT :
 					current++;
 					break;
-				case BELOW :
+				case STRAIGHT :
 					// Nothing
 					break;
 			}
